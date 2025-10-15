@@ -1,0 +1,159 @@
+.hero-six{
+    height: 75vh;
+    background-color: #F7F9FB;
+    padding: 4% 15%;
+}
+.hero-six-box1{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-six-box1-textA{
+    width: 30%;
+}
+.hero-six-box1-textA h6{
+    font-size: 1rem;
+    color: #FE5F54;
+}
+.hero-six-box1-textA h2{
+    font-size: 2rem;
+    color: #11054C;
+}
+.hero-six-box1-textB{
+    width: 55%;
+}
+.hero-six-box1-textB p{
+    font-size: 1rem;
+    color: #425466;
+}
+.hero-six-box2{
+    margin-top: 5%;
+}
+/* ------ */
+.hero-six-box2{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-six-box2A{
+    height: 540px;
+    width: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 30px grey;
+}
+.hero-six-box2A:hover .card-img1{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.15);
+}
+
+.card-img1 img{
+    width: 100%;
+}
+
+.card-tag1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.card-tag1 h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+.card-text1{
+    position: absolute;
+    top: 380px;
+    left: 120px;
+    z-index: 2;
+    width: 45%;
+}
+.card-text1 h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+/* --- */
+.hero-six-box2B{
+    height: 540px;
+    width: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 30px grey;
+}
+.hero-six-box2B:hover .card-img2{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.15);
+}
+
+.card-img2 img{
+    width: 100%;
+}
+
+.card-tag2{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+.card-tag2 h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+.card-text2{
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    z-index: 2;
+    width: 45%;
+}
+.card-text2 h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+/* --- */
+.hero-six-box2C{
+    height: 540px;
+    width: 32%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 30px grey;
+}
+.hero-six-box2C:hover .card-img3{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.15);
+}
+
+.card-img3 img{
+    width: 100%;
+}
+
+.card-tag3{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+.card-tag3 h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+.card-text3{
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    z-index: 2;
+    width: 45%;
+}
+.card-text3 h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}

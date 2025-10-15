@@ -1,0 +1,100 @@
+.hero-five-wrapper {
+    width: 80%;
+    padding: 0 10%;
+    background-color: #4A20F5;
+    position: relative;
+    overflow: hidden;
+}
+.hero-five-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+.hero-five-slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3% 13%;
+    box-sizing: border-box;
+    height: 400px;
+    position: relative;
+    bottom: 50px;
+}
+.hero-five-box1 {
+    width: 70%;
+    height: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 25px;
+}
+.hero-five-box1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    top:60px;
+    border-radius: 10px;
+}
+.hero-five-box2 {
+    width: 55%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hero-five-box2 p:first-child {
+    color: #FFC0CB;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.hero-five-box2 h1 {
+    color: white;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0;
+}
+.hero-five-box2 p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+.hero-five-box2 button {
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    width: 40%;
+    padding: 15px 15px;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.hero-five-box2 button:hover {
+    background-color: #fff;
+    color: #4A20F5;
+}
+.carousel-dots {
+    margin-left: 6%;
+}
+.dot {
+    height: 4px;
+    width: 30px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 2px;
+}
+.dot.active {
+    background-color: #FF0057;
+}

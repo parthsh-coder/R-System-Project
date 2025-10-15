@@ -1,0 +1,39 @@
+.Card {
+    height: 365px;
+    width: 512px;
+    margin-top: 130px;
+    margin-left: 400px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow:0  5px 5px  rgba(0, 0, 0, 0.5);
+}
+
+.Card img {
+    height: 210px;
+    padding: 20px;
+    width: 470px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.Card img:hover{
+    transform: scale(1.2);
+}
+.Card h2 {
+    color: rgb(39, 12, 65);
+    margin-left: 40px;
+    font-size: 30px;
+    position: relative;
+    bottom: 10px;
+    font-weight: 700;
+}
+.Card p {
+    margin-left: 40px;
+    font-size: 16px;
+    color: rgb(69, 66, 66);
+    font-weight: 400;
+}
+.Card h2:hover{
+    color: blue;
+}

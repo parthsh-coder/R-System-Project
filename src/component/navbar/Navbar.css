@@ -1,0 +1,91 @@
+.navbar{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.navbar-list-1{
+    margin-right: 5%;
+}
+.navbar-list-1 ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 1%;
+    gap: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-list-1 ul li{
+    list-style: none;
+    cursor: pointer;
+}
+.navbar-list-2 ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-list-2 ul li{
+    list-style: none;
+    cursor: pointer;
+}
+/* ------- */
+.navbar-scroll{
+    width: 70%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.navbar-list-1-scroll{
+    margin-right: 5%;
+}
+.navbar-list-1-scroll ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 1%;
+    gap: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #425466;
+}
+.navbar-list-1-scroll ul li{
+    list-style: none;
+    cursor: pointer;
+}
+.navbar-list-2-scroll ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #425466;
+}
+.navbar-list-2-scroll ul li{
+    list-style: none;
+    cursor: pointer;
+}
