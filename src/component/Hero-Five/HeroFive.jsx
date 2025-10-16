@@ -42,7 +42,7 @@ const HeroFive = () => {
                             <h1>{slide.title}</h1>
                             <p>{slide.para}</p>
                             <button>
-                                {slide.buttonText} <FaArrowRight style={{ color: 'orange' }} />
+                                {slide.buttonText} <FaArrowRight />
                             </button>
                         </div>
                     </div>

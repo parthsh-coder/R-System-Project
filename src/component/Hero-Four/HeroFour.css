@@ -38,12 +38,12 @@
 }
 
 .boxContent ul {
-    list-style:square;
+    list-style: square;
 }
 
 .boxContent ul li {
     color: rgb(39, 12, 65);
-    font-weight:650;
+    font-weight: 650;
     font-size: 25px;
     margin-bottom: 5px;
 
@@ -54,7 +54,7 @@
     color: rgb(69, 66, 66);
 }
 
-.separation{
+.separation {
     height: 1px;
     width: 1400px;
     background-color: rgb(69, 66, 66);
@@ -62,7 +62,8 @@
     bottom: 230px;
     left: 290px;
 }
-.Pictures{
+
+.Pictures {
     /* border:1px solid black; */
     width: 700px;
     position: relative;
@@ -70,35 +71,185 @@
     left: 600px;
     cursor: pointer;
 }
-#pic1{
+
+#pic1 {
     position: relative;
     right: 170px;
 }
-#pic2{
+
+#pic2 {
     position: relative;
     left: 120px;
 }
-#pic3{
+
+#pic3 {
     position: relative;
     left: 380px;
 }
-.line1{
-    width: 1px;
-    position: relative;
-    left: 800px;
-    bottom: 325px;
-    height: 110px;
-    background-color: rgb(69, 66, 66);
-}
-.line2{
-    width: 1px;
-    position: relative;
-    left: 1250px;
-    bottom: 435px;
-    height: 110px;
-    background-color: rgb(69, 66, 66);
+
+.line1 {
+    display: none;
 }
 
-.HeroFour{
+.line2 {
+    display: none;
+}
+
+.HeroFour {
     height: 100vh;
+}
+
+
+
+
+
+/* --- Media Query for max-width: 1200px (Laptops/Small Desktops) --- */
+@media (max-width: 1200px) {
+    .HeroFour {
+        height: 105vh;
+    }
+
+    .second p {
+        margin-left: 50%;
+        bottom: 150px;
+        width: 40%;
+    }
+
+    .first {
+        margin-left: 10%;
+        top: 40px;
+        width: 45%;
+    }
+
+    .boxContent {
+        top: 80px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .separation {
+        width: 80%;
+        left: 10%;
+        bottom: 180px;
+    }
+
+    .Pictures {
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    #pic1 {
+        right: 450px
+    }
+
+    #pic2 {
+        left: -300px;
+    }
+
+    #pic3 {
+        left: -100px;
+    }
+
+    .line1,
+    .line2 {
+        display: none;
+    }
+
+    .boxContent ul p {
+        margin-bottom: 40px;
+        color: rgb(69, 66, 66);
+        width: 60%;
+    }
+}
+
+
+/* --- Media Query for max-width: 770px (Tablets/Large Phones) --- */
+@media (max-width: 770px) {
+    .HeroFour {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .first,
+    .second {
+        position: static;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        bottom: auto;
+        top: auto;
+    }
+
+    .second p {
+        margin-left: 0;
+        position: static;
+        width: 75%;
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+
+    .first {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .first h3,
+    .first h1 {
+        text-align: center;
+    }
+
+    .boxContent {
+        width: 90%;
+        position: static;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .boxContent ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .boxContent ul li,
+    .boxContent ul p {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .separation {
+        display: none;
+    }
+
+    .Pictures {
+        width: 60%;
+        position: static;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pic1,
+    #pic2,
+    #pic3 {
+        width: 40%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #pic1 {
+        right: -10px;
+    }
+
+    #pic2 {
+        left: 150px
+    }
+
+    #pic3 {
+        left: 300px;
+    }
+
+    .line1,
+    .line2 {
+        display: none;
+    }
 }
