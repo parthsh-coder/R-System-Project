@@ -59,8 +59,8 @@
     color: #fff;
 }
 .hero-seven-box2-btn button {
-    background-color: #fff;
-    color: #425466;
+    background-color: #15BE53;
+    color: #F8F9FD;
     padding: 15px 25px;
     border: none;
     border-radius: 5px;
@@ -68,8 +68,8 @@
     cursor: pointer;
 }
 .hero-seven-box2-btn button:hover {
-    background-color: #11054C;
-    color: #fff;
+    background-color: #F8F9FD;
+    color: #15BE53;
     transition: 0.5s;
 }
 /* ------- */
@@ -105,12 +105,134 @@
     padding: 1.5% 3%;
     font-size: 1rem;
     border: 1px solid #11054c3b;
-    color: #11054C;
-    background-color: transparent;
+    color: #fff;
+    background-color: #11054C;
     border-radius: 5px;
 }
 .hero-seven-box3-text button:hover {
-    background-color: #11054C;
-    color: #fff;
+    background-color: #fff;
+    color: #11054C;
     transition: 0.5s;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .hero-seven {
+        padding: 0% 5%;
+    }
+
+    .hero-seven-box1-img {
+        gap: 30px;
+    }
+
+    .hero-seven-box2 {
+        height: 220px;
+    }
+
+    .hero-seven-box2-text h5 {
+        font-size: 1.2rem;
+    }
+
+    .hero-seven-box2-btn button {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .hero-seven-box3-img img {
+        width: 350px;
+        height: 220px;
+    }
+
+    .hero-seven-box3-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-seven-box3-text button {
+        width: 40%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 770px) {
+    .hero-seven {
+        padding: 0% 2%;
+    }
+
+    .hero-seven-box1 {
+        margin: 10% 2%;
+    }
+
+    .hero-seven-box1-img img{
+        width: 150px;
+        height: 80px;
+    }
+
+    .hero-seven-box1 h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-seven-box1-img {
+        gap: 20px;
+    }
+
+    .hero-seven-box2 {
+        width: 670px;
+        height: auto;
+        min-height: 180px;
+        margin: 8% 2%;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-seven-box2-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 5%;
+        gap: 15px;
+    }
+
+    .hero-seven-box2-text {
+        width: 100%;
+    }
+
+    .hero-seven-box2-text h5 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .hero-seven-box2-btn button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .hero-seven-box3 {
+        flex-direction: column;
+        margin: 10% 2%;
+        gap: 30px;
+    }
+
+    .hero-seven-box3-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-seven-box3-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-seven-box3-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-seven-box3-text p {
+        text-align: center;
+        width: 90%;
+    }
+
+    .hero-seven-box3-text button {
+        width: 60%;
+        margin: 10px auto 0 auto;
+    }
 }

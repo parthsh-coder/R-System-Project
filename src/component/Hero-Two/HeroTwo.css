@@ -1,4 +1,4 @@
-.HeroTwo{
+/* .HeroTwo{
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
@@ -41,4 +41,101 @@
     text-decoration: underline;
     color: blueviolet;
     cursor: pointer;
+} */
+
+
+
+
+
+
+.HeroTwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 5rem 1rem 0;
+}
+
+.one{
+    max-width: 300px;
+}
+.two {
+    flex: 1 1 45%; 
+    max-width: 700px;
+    padding: 1rem;
+}
+
+.two p {
+    /* Removed large fixed margin, letting Flexbox handle placement */
+    margin: 0;
+    font-size: 1.125rem; /* ~18px */
+    line-height: 1.6;
+    color: rgb(69, 66, 66);
+}
+
+.one h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.25rem; /* ~20px */
+    font-weight: 400;
+    color: rgb(25, 85, 25);
+}
+
+.two {
+    /* Removed fixed margin-left */
+    padding: 1rem;
+}
+
+.one h1 {
+    color: rgb(39, 12, 65);
+    margin-bottom: 3rem; /* Reduced from 70px */
+}
+
+.one ul {
+    list-style: none;
+    padding: 0;
+}
+
+.one ul li {
+    font-size: 1.0625rem; /* ~17px */
+    margin-bottom: 1.25rem; /* ~20px */
+    color: rgb(69, 66, 66);
+}
+
+.one ul li:hover {
+    text-decoration: underline;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .HeroTwo {
+        justify-content: space-between; 
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .one {
+        flex-basis: 55%; 
+    }
+    
+    .two {
+        flex-basis: 35%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .one h1 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .one h3, .two p, .one ul li {
+        font-size: 0.95rem;
+    }
+
+    .HeroTwo {
+        margin-top: 3rem;
+    }
 }

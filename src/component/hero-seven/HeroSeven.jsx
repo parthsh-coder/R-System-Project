@@ -28,7 +28,7 @@ const HeroSeven = () => {
                             <p>Talk to an expert about your organization’s unique needs</p>
                         </div>
                         <div className="hero-seven-box2-btn">
-                            <button>Talk to an expert <FaArrowRight style={{ color: '#425466', paddingLeft: '2px' }} /> </button>
+                            <button>Talk to an expert <FaArrowRight style={{ paddingLeft: '2px' }} /> </button>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ const HeroSeven = () => {
                         <h6>#GPTWCertified</h6>
                         <h2>R Systems is ‘Great Place To Work’® Certified™</h2>
                         <p>We are Great Place To Work® Certified™ in 6 countries with a full-time workforce - India, the US, Canada, Romania, Poland, and Moldova - each country individually acknowledging R Systems as a preferred employer.</p>
-                        <button>Learn More <FaArrowRight style={{ color: 'orange', paddingLeft: '2px' }} /> </button>
+                        <button>Learn More <FaArrowRight style={{ paddingLeft: '2px' }} /> </button>
                     </div>
                     <div className="hero-seven-box3-img">
                         <img src={certificate} alt="" />

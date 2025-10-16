@@ -6,20 +6,25 @@
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .carousel-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .carousel-slide {
     min-width: 100%;
     box-sizing: border-box;
     position: relative;
 }
+
 .carousel-slide img {
     width: 100%;
     height: 100vh;
     display: block;
+    object-fit: cover;
 }
+
 .carousel-dots {
     position: absolute;
     bottom: 15px;
@@ -28,6 +33,7 @@
     display: flex;
     gap: 10px;
 }
+
 .dot {
     height: 4px;
     width: 30px;
@@ -37,9 +43,11 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .dot.active {
     background-color: #717171;
 }
+
 .slider-content {
     top: 35%;
     left: 15%;
@@ -52,28 +60,115 @@
     flex-direction: column;
     gap: 10px;
 }
-.slider-content h1{
+
+.slider-content h1 {
     width: 37%;
     font-size: 34px;
 }
-.slider-content p{
+
+.slider-content p {
     width: 35%;
     font-size: 18px;
 }
-.slider-content button{
+
+.slider-content button {
     width: 10%;
     height: 50px;
     margin-top: 3%;
-    border: 2px solid white;
+    border: none;
     border-radius: 5px;
-    color: white;
-    background-color: transparent;
+    color: #F8F9FD;
+    background-color: #15BE53;
     font-weight: bold;
     font-size: large;
     cursor: pointer;
 }
-.slider-content button:hover{
-    background-color: #fff;
-    color: black;
+
+.slider-content button:hover {
+    background-color: #F8F9FD;
+    color: #15BE53;
     transition: 0.5s;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+
+/* Tablet Devices (screens between 768px and 1024px) */
+@media (max-width: 1200px) {
+    .slider-content button {
+        width: 20%;
+        height: 50px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider-content h1 {
+        width: 50%;
+        font-size: 30px;
+    }
+
+    .slider-content p {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .slider-content button {
+        width: 25%;
+        height: 45px;
+        font-size: medium;
+    }
+
+    .dot {
+        width: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Mobile Devices (screens up to 767px) */
+@media (max-width: 767px) {
+
+    .carousel-container,
+    .carousel-slide img {
+        height: 100vh;
+    }
+
+    .slider-content {
+        top: 20%;
+        left: 5%;
+        padding: 10px;
+        width: 90%;
+        gap: 5px;
+    }
+
+    .slider-content h1 {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .slider-content p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .slider-content button {
+        width: 40%;
+        height: 40px;
+        margin-top: 5%;
+        font-size: small;
+    }
+
+    .dot {
+        width: 15px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-dots {
+        bottom: 10px;
+    }
 }

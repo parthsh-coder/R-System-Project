@@ -1,5 +1,5 @@
-.Slider-Container {
-    width: 60%;
+/* .Slider-Container {
+    width: 100%;
     height: 40vh;
     margin: 0 auto;
     overflow: hidden;
@@ -47,4 +47,92 @@
 
 .dot.active {
     background-color: grey;
+}
+
+ */
+
+
+
+
+
+
+
+.Slider-Container {
+    /* Use a slightly less than 100% width and auto margins for reliable centering and page padding. */
+    width: 100%;
+    max-width: 1200px;
+    height: 33vh;
+    margin: 40px auto 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.Slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.Slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    height: 4px;
+    width: 20px;
+    margin-bottom: 50px;
+    background-color: aqua;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: grey;
+}
+
+
+
+@media (max-width: 1200px) {
+    .Slide img {
+        width: 100%;
+        height: 225%;
+        object-fit: cover;
+        display: block;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .Slider-Container {
+        /* Reduce height on small screens to save vertical space */
+        height: 24vh;
+        width: 100%;
+        border-radius: 0;
+        /* Optional: Square corners on full-width mobile */
+        margin-top: 20px;
+    }
+
+    .dot {
+        /* Reduce dot margin for a smaller footer area */
+        margin-bottom: 20px;
+    }
 }

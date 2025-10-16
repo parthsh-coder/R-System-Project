@@ -49,3 +49,44 @@
 .dot.active {
     background-color: grey;
 }
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .Slider1-Container {
+        width: 50%;
+        height: 35vh;
+        left: 20%;
+        bottom: 100px;
+    }
+
+    .Slide1 img {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 770px) {
+    .Slider1-Container {
+        width: 90%;
+        height: 35vh;
+        left: 1%;
+        margin-top: 20%;
+        bottom: 50px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .Slide1 img {
+        height: 35vh;
+    }
+
+    .dot1 {
+        height: 4px;
+        width: 25px;
+        margin-bottom: 10px;
+    }
+}

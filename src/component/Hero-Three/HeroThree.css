@@ -39,3 +39,80 @@
 .card1{
     margin-left: 120px;
 }
+
+
+
+
+
+
+
+
+/* --- Media Query for max-width: 1200px (Laptops/Small Desktops) --- */
+@media (max-width: 1200px) {
+
+    .content {
+        margin-left: 100px;
+        width: 50%;
+        top: 40px;
+    }
+
+    .card2 {
+        width: 50%;
+        margin-left: 45%;
+        bottom: 600px;
+    }
+
+    .card1 {
+        margin-left: 50px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+
+/* --- Media Query for max-width: 770px (Tablets/Large Phones) --- */
+@media (max-width: 770px) {
+    .HeroThree {
+        margin-top: 40px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .content {
+        margin-left: 5%;
+        width: 90%;
+        position: static;
+        top: auto;
+        text-align: center;
+    }
+
+    .content h3, .content h1, .content p {
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .card2 {
+        width: 90%;
+        margin-left: 5%;
+        position: static;
+        bottom: auto;
+        margin-top: 40px;
+    }
+
+    .inner {
+        position: static;
+        bottom: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .card1 {
+        margin-left: 35px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+}
